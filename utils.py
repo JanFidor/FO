@@ -27,6 +27,7 @@ def draw_image_predictions(states, n_patterns, n_transitions, prefix):
 
     save_path = Path('./png') / f'{prefix}_mnist_image_prediction'
     plt.savefig(save_path)
+    plt.show()
     plt.close()
 
 

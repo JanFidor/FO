@@ -15,7 +15,7 @@ class HopfieldNet:
     - the number of units is the same as the dimension of an input.
     - the state is an 1-dimensional vector with size of the number of units.
     - a unit of the state is either -1 or 1.
-    - the weight matrix is constructed by Hebbian learning.
+    - the weight matrix is constructed by Hebbian rule.
     - the weight matrix is symmetric with zero-diagonal elements.
     - the bias term is the same for all units.
     - the activation function is sign function.

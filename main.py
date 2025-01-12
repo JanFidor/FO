@@ -21,7 +21,7 @@ def save_mnist_prediction(fetch: mnist.MnistForHopfield, bias: float, sync: bool
 
 
 def main():
-    fetch = mnist.fetch_minist_for_hopfield(size=5, error_rate=0.14)    
+    fetch = mnist.fetch_minist_for_hopfield(size=5, error_rates=[0.14,])[0]
     bias = 60
     save_mnist_prediction(fetch=fetch, bias=bias, sync=False)
     save_mnist_prediction(fetch=fetch, bias=bias, sync=True)
