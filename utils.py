@@ -35,6 +35,8 @@ def draw_energy_transition(energies, prefix):
     x_axis = np.arange(len(energies[0]))
     for energy_idx in range(len(energies)):
         plt.plot(x_axis, energies[energy_idx], label=f'pattern_{energy_idx}')
+    plt.xlabel('transitions')
+    plt.ylabel('energy')
     plt.legend()
     save_path = Path('./png') / f'{prefix}_energy_transition'
     plt.savefig(save_path)
